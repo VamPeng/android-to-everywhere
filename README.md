@@ -21,9 +21,11 @@
 - [长期路线](ROADMAP.md)
 - [能力矩阵](SKILL_MATRIX.md)
 - [多平台功能矩阵](FEATURE_MATRIX.md)
+- [执行规则](WORKFLOW.md)
+- [Obsidian 配置](OBSIDIAN_SETUP.md)
 - [当前季度](quarters/2026-Q3.md)
 - [第一执行周](weeks/2026-W35.md)
-- [执行规则](WORKFLOW.md)
+- [主实战项目](projects/PRIMARY_PROJECT.md)
 
 ## 使用方式
 
