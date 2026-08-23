@@ -7,9 +7,10 @@ updated: 2026-08-23
 
 ## 当前执行
 
+- 新会话接管：[[AI_HANDOFF]]
+- 当前状态：[[CURRENT_STATUS]]
 - 长期路线：[[ROADMAP]]
 - 当前能力：[[PROFILE]]
-- 当前状态：[[CURRENT_STATUS]]
 - 当前季度：[[quarters/2026-Q3|2026 Q3]]
 - 当前周：[[weeks/2026-W35|2026 W35]]
 - 当前学习：[[learning/android-performance/01-ui-jank-guided-lab|UI 卡顿 Trace 引导实验]]
@@ -68,6 +69,8 @@ LIMIT 8
 
 ## 导航
 
+- [[AI_HANDOFF|新会话接管协议]]
+- [[CURRENT_STATUS|当前执行状态]]
 - [[learning/README|学习内容]]
 - [[SKILL_MATRIX|能力矩阵]]
 - [[FEATURE_MATRIX|多平台功能矩阵]]

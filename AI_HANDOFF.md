@@ -7,7 +7,7 @@ source_of_truth: main
 
 # 新会话接管协议
 
-本文件用于让任何新的 AI 会话在**不依赖旧聊天记忆**的情况下，继续维护职业路线、周计划与实战证据。
+本文件用于让任何新的 AI 会话在**不依赖旧聊天记忆**的情况下，继续维护职业路线、学习内容、周计划与实战证据。
 
 ## 用户最短指令
 
@@ -36,6 +36,7 @@ https://github.com/VamPeng/android-to-everywhere
 3. 勾选项、Commit、PR、测试、Trace、截图、案例报告等，才是完成证据。
 4. 没有证据时，可以记录为“已实现待验证”，不能升级为“已掌握”。
 5. 不重新发明整套路线；除非用户明确要求，否则保持现有优先级。
+6. 当能力尚未达到独立水平时，不得跳过学习包和引导实验直接布置开放式案例。
 
 ## 二、接管时读取顺序
 
@@ -43,10 +44,12 @@ https://github.com/VamPeng/android-to-everywhere
 AI_HANDOFF.md
 → CURRENT_STATUS.md
 → CURRENT_STATUS 指向的 weeks/ 当前周文件
+→ CURRENT_STATUS 的 current_learning 指向的学习文档（如存在）
 → CURRENT_STATUS 指向的 quarters/ 当前季度文件
 → PROFILE.md
 → ROADMAP.md
 → WORKFLOW.md
+→ LEARNING_SYSTEM.md
 → SKILL_MATRIX.md / FEATURE_MATRIX.md
 → 与本次任务有关的 projects/ cases/ evidence/
 ```
@@ -81,12 +84,13 @@ AI_HANDOFF.md
 执行步骤：
 
 1. 读取当前周所有交付物和完成标准。
-2. 检查对应项目、案例和证据链接。
-3. 只向用户确认仓库无法判断的差异，不要求重复描述已记录内容。
-4. 更新当前周的复选框、阻塞、复盘和状态。
-5. 更新 `CURRENT_STATUS.md` 中的下一步、阻塞和最后变更。
-6. 只有证据充分时才更新 `SKILL_MATRIX.md` 或 `FEATURE_MATRIX.md`。
-7. 提交建议：`docs: update 2026-Wxx progress`。
+2. 如果周任务链接了 `learning/` 文档，检查用户是否完成对应观察、解释和证据。
+3. 检查对应项目、案例和证据链接。
+4. 只向用户确认仓库无法判断的差异，不要求重复描述已记录内容。
+5. 更新当前周的复选框、阻塞、复盘和状态。
+6. 更新 `CURRENT_STATUS.md` 中的下一步、阻塞、当前学习和最后变更。
+7. 只有证据充分时才更新 `SKILL_MATRIX.md` 或 `FEATURE_MATRIX.md`。
+8. 提交建议：`docs: update 2026-Wxx progress`。
 
 ## 五、确定“下一个任务”
 
@@ -95,17 +99,22 @@ AI_HANDOFF.md
 1. 从当前周尚未完成的交付物中选择任务。
 2. 优先选择能在一次工作时段内形成闭环的最小步骤。
 3. 不开启当前周明确排除的新方向。
-4. 输出必须包含：
+4. 先判断用户是否已经具备执行该任务所需的工具和基础：
+   - 已具备：直接进入最小交付；
+   - 尚不具备：先读取或创建对应学习包和引导实验。
+5. 输出必须包含：
 
 ```text
 任务目标
+→ 需要先理解的最小内容
 → 需要完成的代码或操作
+→ 工具中具体观察什么
 → 验收条件
 → 需要留下的证据
 → 完成后更新哪些仓库文件
 ```
 
-5. 将唯一下一步写入 `CURRENT_STATUS.md`，避免多个会话各自制定不同任务。
+6. 将唯一下一步和 `current_learning` 写入 `CURRENT_STATUS.md`，避免多个会话各自制定不同任务。
 
 ## 六、制定下一个 Week
 
@@ -120,12 +129,13 @@ AI_HANDOFF.md
 4. Flutter 与 React Native 战略优先级一致，但按 Sprint 交替主攻。
 5. iOS、HarmonyOS、Vue、Java 后端按计划轮换，不在同一周全面展开。
 6. 每个交付物都必须有可验证完成标准和证据要求。
-7. 不使用“学习某技术”作为任务名称，必须落到可运行功能、故障案例或工程成果。
-8. 同步更新：
+7. 新工具或新能力必须链接 `learning/` 学习文档；没有时先创建学习包。
+8. 不使用空泛的“学习某技术”作为任务名称，必须落到可解释、可运行、可验证的实验或工程成果。
+9. 同步更新：
    - `CURRENT_STATUS.md`；
-   - `00-Dashboard.md` 的当前周链接；
+   - `00-Dashboard.md` 的当前周与当前学习链接；
    - 必要时更新当前季度文件。
-9. 提交建议：`plan: add 2026-Wxx execution week`。
+10. 提交建议：`plan: add 2026-Wxx execution week`。
 
 ## 七、每次会话结束前必须做的事
 
@@ -134,7 +144,8 @@ AI_HANDOFF.md
 2. 更新 CURRENT_STATUS.md
 3. 补充 Commit / PR / 案例 / 证据链接
 4. 确认没有错误升级技能等级
-5. 提交到 main，或在无写权限时提供完整补丁
+5. 确认 current_learning 和唯一下一步仍然准确
+6. 提交到 main，或在无写权限时提供完整补丁
 ```
 
 ## 八、禁止事项
@@ -143,6 +154,7 @@ AI_HANDOFF.md
 - 不擅自改变 Android、Flutter、RN 等既定优先级。
 - 不同时创建大量课程和任务。
 - 不把 AI 生成并成功运行等同于独立掌握。
+- 不在不会使用工具时只要求用户提交最终案例。
 - 不提交公司内部资料、真实用户数据、Token、密钥或未脱敏日志。
 - 不删除历史周计划；历史文件是进度证据。
 
@@ -152,6 +164,7 @@ AI_HANDOFF.md
 
 ```text
 读取 AI_HANDOFF.md 和 CURRENT_STATUS.md，检查当前 Week 的仓库记录。
+如果 CURRENT_STATUS 存在 current_learning，同时检查对应学习文档的观察和证据要求。
 先按“已完成 / 部分完成 / 阻塞 / 未开始”汇总，再只确认仓库无法判断的信息。
 确认后更新 Week 与 CURRENT_STATUS，并提交。
 ```
@@ -159,13 +172,16 @@ AI_HANDOFF.md
 ### 给出现在要做的一件事
 
 ```text
-读取当前 Week，从未完成内容中选择一个最小闭环任务。
-给出目标、步骤、验收条件和证据要求，并把它写入 CURRENT_STATUS.md。
+读取当前 Week、CURRENT_STATUS.current_learning 和 LEARNING_SYSTEM.md。
+从未完成内容中选择一个最小闭环任务。
+不要默认我已经会工具；给出最小知识、具体观察项、步骤、验收条件和证据要求，
+并把它写入 CURRENT_STATUS.md。
 ```
 
 ### 制定下一周
 
 ```text
 读取当前 Week 和季度目标，先完成周复盘，再根据 WORKFLOW.md 创建下一 Week。
-最多三个交付物，更新 Dashboard 与 CURRENT_STATUS，并提交。
+最多三个交付物；新能力必须配套 learning/ 文档。
+更新 Dashboard 与 CURRENT_STATUS，并提交。
 ```

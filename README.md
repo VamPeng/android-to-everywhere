@@ -2,7 +2,7 @@
 
 > 以 Android 为根，建立跨端、原生多平台、前端与 Java 后端的独立开发能力。
 
-这是个人职业能力规划与实战证据总仓库。GitHub 保存唯一真实内容，Obsidian 直接打开本地仓库作为阅读、编辑和聚合面板。
+这是个人职业能力规划、学习内容与实战证据总仓库。GitHub 保存唯一真实内容，Obsidian 直接打开本地仓库作为阅读、编辑和聚合面板。
 
 ## 能力路线
 
@@ -19,6 +19,9 @@
 - [新会话接管协议](AI_HANDOFF.md)
 - [当前执行状态](CURRENT_STATUS.md)
 - [Obsidian 仪表盘](00-Dashboard.md)
+- [实战学习系统](LEARNING_SYSTEM.md)
+- [当前学习：UI 卡顿 Trace 引导实验](learning/android-performance/01-ui-jank-guided-lab.md)
+- [学习内容索引](learning/README.md)
 - [当前能力基线](PROFILE.md)
 - [长期路线](ROADMAP.md)
 - [能力矩阵](SKILL_MATRIX.md)
@@ -40,7 +43,21 @@ https://github.com/VamPeng/android-to-everywhere
 本次任务：检查当前 Week 进度并确定下一步。
 ```
 
-`CURRENT_STATUS.md` 保存当前季度、当前 Week、进度、阻塞和唯一下一步。每次会话结束都应更新它。
+`CURRENT_STATUS.md` 保存当前季度、当前 Week、当前学习、进度、阻塞和唯一下一步。每次会话结束都应更新它。
+
+## 学习与实战关系
+
+```text
+learning/：怎么学、怎么看工具、如何完成引导实验
+weeks/：本周具体交付什么
+cases/：最终解决了什么问题，证据是什么
+```
+
+新能力默认按以下路径推进：
+
+```text
+学习包 → 引导实验 → 半开放案例 → 独立案例
+```
 
 ## 使用方式
 
@@ -55,7 +72,7 @@ Obsidian Vault：导航、查询与复盘面板
 1. 克隆仓库。
 2. 在 Obsidian 中选择 **Open folder as vault**，打开仓库根目录。
 3. 每周只创建少量、可验收的交付物。
-4. 代码放在各技术项目仓库，本仓库保存计划、案例、证据链接与复盘。
+4. 代码放在各技术项目仓库，本仓库保存学习文档、计划、案例、证据链接与复盘。
 5. 每周提交一次进度，每季度重估优先级。
 
 ## 掌握标准
