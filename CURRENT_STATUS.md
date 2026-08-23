@@ -6,6 +6,7 @@ active_week: 2026-W35
 week_status: planned
 cross_platform_primary: Flutter
 cross_platform_maintenance: React Native
+current_learning: learning/android-performance/01-ui-jank-guided-lab.md
 ---
 
 # 当前执行状态
@@ -18,6 +19,7 @@ cross_platform_maintenance: React Native
 |---|---|
 | 当前季度 | [[quarters/2026-Q3|2026 Q3]] |
 | 当前周 | [[weeks/2026-W35|2026 W35]] |
+| 当前学习 | [[learning/android-performance/01-ui-jank-guided-lab|UI 卡顿 Trace 引导实验]] |
 | 周期 | 2026-08-24 ～ 2026-08-30 |
 | 状态 | 计划完成，等待开始 |
 | 跨端主攻 | Flutter |
@@ -27,14 +29,14 @@ cross_platform_maintenance: React Native
 
 建立可持续执行节奏，并留下：
 
-1. 第一份 Android 页面卡顿诊断证据；
+1. 第一份 Android UI 卡顿引导实验与 Trace 判读证据；
 2. 第一条 Flutter 登录垂直业务链；
 3. 可正常使用的 GitHub + Obsidian 执行环境。
 
 ## 当前进度
 
 ```text
-Android 页面卡顿案例：未开始
+Android UI 卡顿引导实验：学习文档已建立，实验未开始
 Flutter 登录垂直切片：未开始
 Obsidian 与项目登记：仓库已建立，其余未开始
 ```
@@ -44,28 +46,31 @@ Obsidian 与项目登记：仓库已建立，其余未开始
 ## 唯一下一步
 
 ```text
-克隆本仓库
-→ 在 Obsidian 中打开仓库根目录
+克隆本仓库并在 Obsidian 中打开
 → 安装 Dataview
-→ 确认 00-Dashboard.md 可以渲染技能表与任务
+→ 从 Dashboard 打开 UI 卡顿 Trace 引导实验
+→ 只阅读“本节目标、最小概念、实验准备”三部分
 ```
+
+本步骤暂不要求立刻采集 Trace。阅读完成后，把不理解的概念列出来，再开始第一个 `Sleep 80 ms` 受控实验。
 
 完成后：
 
 - 勾选 `weeks/2026-W35.md` 中对应的系统落地任务；
-- 将本页的“唯一下一步”改为 Android 实验项目选择或 Flutter 项目骨架；
+- 将本页的“唯一下一步”改为录制 `Sleep 80 ms` System Trace；
 - 提交进度更新。
 
 ## 当前阻塞
 
-无已记录阻塞。
+原计划直接要求完成性能案例，但缺少 Trace 工具教学。已通过 `LEARNING_SYSTEM.md` 和首份引导实验修正。
 
 ## 本周明确不做
 
 - 不同时实现 React Native 登录页面；
 - 不开始 iOS、HarmonyOS、Vue 或 Java 新课程；
 - 不把登录扩张成完整产品；
-- 不在没有证据时更新技能等级。
+- 不在没有证据时更新技能等级；
+- 不在工具判读尚未掌握时直接挑战复杂未知卡顿。
 
 ## 最近变更
 
@@ -73,6 +78,7 @@ Obsidian 与项目登记：仓库已建立，其余未开始
 |---|---|
 | 2026-08-23 | 建立职业路线仓库、Obsidian Dashboard、首个季度与周计划 |
 | 2026-08-23 | 增加新会话接管协议和当前状态指针 |
+| 2026-08-23 | 增加实战学习系统，并将 Android 卡顿任务改为带教式 Trace 实验 |
 
 ## 会话结束更新清单
 
