@@ -16,6 +16,8 @@
 
 ## 快速入口
 
+- [新会话接管协议](AI_HANDOFF.md)
+- [当前执行状态](CURRENT_STATUS.md)
 - [Obsidian 仪表盘](00-Dashboard.md)
 - [当前能力基线](PROFILE.md)
 - [长期路线](ROADMAP.md)
@@ -26,6 +28,19 @@
 - [当前季度](quarters/2026-Q3.md)
 - [第一执行周](weeks/2026-W35.md)
 - [主实战项目](projects/PRIMARY_PROJECT.md)
+
+## 新会话继续工作
+
+新开 AI 会话时，只需提供仓库地址并要求先读取 `AI_HANDOFF.md`：
+
+```text
+接管我的职业规划仓库：
+https://github.com/VamPeng/android-to-everywhere
+先读取 main 分支的 AI_HANDOFF.md，并严格按其中协议工作。
+本次任务：检查当前 Week 进度并确定下一步。
+```
+
+`CURRENT_STATUS.md` 保存当前季度、当前 Week、进度、阻塞和唯一下一步。每次会话结束都应更新它。
 
 ## 使用方式
 

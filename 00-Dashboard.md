@@ -7,6 +7,8 @@ updated: 2026-08-23
 
 ## 当前执行
 
+- 新会话接管：[[AI_HANDOFF]]
+- 当前状态：[[CURRENT_STATUS]]
 - 长期路线：[[ROADMAP]]
 - 当前能力：[[PROFILE]]
 - 当前季度：[[quarters/2026-Q3|2026 Q3]]
@@ -65,6 +67,8 @@ LIMIT 8
 
 ## 导航
 
+- [[AI_HANDOFF|新会话接管协议]]
+- [[CURRENT_STATUS|当前执行状态]]
 - [[SKILL_MATRIX|能力矩阵]]
 - [[FEATURE_MATRIX|多平台功能矩阵]]
 - [[projects/PROJECT_INDEX|项目索引]]
