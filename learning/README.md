@@ -11,6 +11,15 @@ updated: 2026-08-23
 
 - [[android-performance/README|Android 性能与疑难排查]]
   - [[android-performance/01-ui-jank-guided-lab|01：UI 卡顿 Trace 引导实验]]
+- [[flutter/README|Flutter：从 Android 到中级独立开发]]
+  - [[flutter/01-dart-foundation|01：Dart 核心基础]]
+  - [[flutter/02-widget-layout-rendering|02：Widget、布局与渲染更新]]
+  - [[flutter/03-state-routing-architecture|03：状态与工程组织]]
+  - [[flutter/04-data-network-storage|04：网络与数据]]
+  - [[flutter/05-media-files-permissions|05：媒体、文件与权限]]
+  - [[flutter/06-build-release|06：构建、签名与发布]]
+  - [[flutter/07-platform-channel|07：原生桥接]]
+  - [[flutter/08-quality-diagnostics|08：质量与问题定位]]
 
 ## 学习方法
 

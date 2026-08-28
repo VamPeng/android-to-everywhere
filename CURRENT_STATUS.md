@@ -1,6 +1,6 @@
 ---
 type: current-status
-updated: 2026-08-23
+updated: 2026-08-26
 active_quarter: 2026-Q3
 active_week: 2026-W35
 week_status: planned
@@ -30,14 +30,14 @@ current_learning: learning/android-performance/01-ui-jank-guided-lab.md
 建立可持续执行节奏，并留下：
 
 1. 第一份 Android UI 卡顿引导实验与 Trace 判读证据；
-2. 第一条 Flutter 登录垂直业务链；
+2. Flutter 完整教学路径，以及 Dart 基础的第一个可运行实验；
 3. 可正常使用的 GitHub + Obsidian 执行环境。
 
 ## 当前进度
 
 ```text
 Android UI 卡顿引导实验：学习文档已建立，实验未开始
-Flutter 登录垂直切片：未开始
+Flutter：八领域教学路径已建立，01 Dart 基础实验未开始
 Obsidian 与项目登记：仓库已建立，其余未开始
 ```
 
@@ -79,6 +79,7 @@ Obsidian 与项目登记：仓库已建立，其余未开始
 | 2026-08-23 | 建立职业路线仓库、Obsidian Dashboard、首个季度与周计划 |
 | 2026-08-23 | 增加新会话接管协议和当前状态指针 |
 | 2026-08-23 | 增加实战学习系统，并将 Android 卡顿任务改为带教式 Trace 实验 |
+| 2026-08-26 | 建立 Flutter 八领域教学路径，将登录调整为 01～03 后的综合验收 |
 
 ## 会话结束更新清单
 
