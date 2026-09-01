@@ -2,8 +2,8 @@
 type: learning-module
 area: Flutter
 module: 01
-status: planned
-updated: 2026-08-26
+status: completed
+updated: 2026-09-01
 ---
 
 # 01：Dart 核心基础
@@ -51,5 +51,7 @@ Map 模拟 JSON
 - 一张 Kotlin/Dart 语义差异表；
 - 一份成功、失败和异常输出；
 - 能解释 Future 与 Stream 的差别，以及异常沿异步链传播的路径。
+
+快速回顾：[[01-dart-foundation-review|01：Dart 核心基础快速复习]]。
 
 通过后进入 [[02-widget-layout-rendering|02：Widget、布局与渲染更新]]。

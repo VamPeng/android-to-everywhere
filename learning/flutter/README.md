@@ -27,7 +27,7 @@ updated: 2026-08-26
 
 | 章节 | 核心问题 | 引导产出 | 综合验收 |
 |---|---|---|---|
-| [[01-dart-foundation|01 Dart 核心基础]] | Flutter 业务代码如何表达数据、异步和异常 | 纯 Dart 用户请求实验 | 为登录状态与 Repository 提供语言基础 |
+| [[01-dart-foundation|01 Dart 核心基础]]（[[01-dart-foundation-review|快速复习]]） | Flutter 业务代码如何表达数据、异步和异常 | 纯 Dart 用户请求实验 | 为登录状态与 Repository 提供语言基础 |
 | [[02-widget-layout-rendering|02 Widget、布局与渲染更新]] | 页面如何创建、约束、更新和销毁 | 可交互用户资料页 | 能独立搭建登录 UI 并解释刷新 |
 | [[03-state-routing-architecture|03 状态与工程组织]] | 状态和依赖如何跨页面、跨模块流动 | 登录状态流骨架 | 完整登录垂直切片 |
 | [[04-data-network-storage|04 网络与数据]] | 远端与本地数据如何可靠协作 | 带缓存的分页列表 | 列表、详情、缓存、错误恢复与 SSE |
