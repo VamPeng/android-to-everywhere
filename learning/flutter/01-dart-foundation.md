@@ -2,11 +2,13 @@
 type: learning-module
 area: Flutter
 module: 01
-status: planned
-updated: 2026-08-27
+status: completed
+updated: 2026-09-04
 ---
 
 # 01：Dart 语言、异步与工程工具链
+
+> 保留 2026-09-01 原版 Dart 基础的完成记录。本次扩展的节点与 L0～L3 门禁尚需逐项核对证据，不因合并文档自动认定已完成。
 
 ## 本章目标
 
@@ -71,5 +73,7 @@ Map 模拟 JSON
 - 一份成功、失败和异常输出，以及单元测试结果；
 - `format`、`analyze`、Lint 和依赖状态无未解释问题；
 - 能解释 Future、Stream 与 isolate 的边界，以及异常沿异步链传播的路径。
+
+快速回顾：[[01-dart-foundation-review|01：Dart 核心基础快速复习]]。
 
 通过 L0～L3 后进入 [[02-widget-layout-rendering|02：Widget、输入、布局、适配与可访问性]]。
