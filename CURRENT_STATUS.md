@@ -1,6 +1,6 @@
 ---
 type: current-status
-updated: 2026-08-27
+updated: 2026-09-05
 active_quarter: 2026-Q3
 active_week: 2026-W35
 week_status: planned
@@ -37,7 +37,7 @@ current_learning: learning/android-performance/01-ui-jank-guided-lab.md
 
 ```text
 Android UI 卡顿引导实验：学习文档已建立，实验未开始
-Flutter：八领域知识主干与 L0～L3 门禁已优化，01 Dart 实验未开始
+Flutter：八领域知识主干与 L0～L3 门禁已优化；01 原版 Dart 基础已记录于 2026-09-01 完成，新增节点与门禁待核对证据
 Obsidian 与项目登记：仓库已建立，其余未开始
 ```
 
@@ -81,6 +81,7 @@ Obsidian 与项目登记：仓库已建立，其余未开始
 | 2026-08-23 | 增加实战学习系统，并将 Android 卡顿任务改为带教式 Trace 实验 |
 | 2026-08-26 | 建立 Flutter 八领域教学路径，将登录调整为 01～03 后的综合验收 |
 | 2026-08-27 | 优化 Flutter 八领域知识主干，补齐现代 Dart、输入适配、鉴权会话、发布交付、Pigeon、可观测性等节点，并统一 L0～L3 门禁 |
+| 2026-09-05 | 对齐 Dart 原版完成记录与扩展节点待验收状态，保留快速复习入口 |
 
 ## 会话结束更新清单
 
